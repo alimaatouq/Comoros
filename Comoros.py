@@ -21,12 +21,14 @@ st.write('<style>div.block-container{padding-top:0rem;}</style>', unsafe_allow_h
 left_co, cent_co,last_co = st.columns(3)
 with last_co:
     st.image("https://i2.wp.com/ummah-futures.net/wp-content/uploads/2019/12/%D8%A7%D9%84%D9%84%D8%AC%D9%86%D8%A9-%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF%D9%8A%D8%A9-%D9%88%D8%A7%D9%84%D8%A7%D8%AC%D8%AA%D9%85%D8%A7%D8%B9%D9%8A%D8%A9-%D9%84%D8%BA%D8%B1%D8%A8%D9%8A-%D8%A2%D8%B3%D9%8A%D8%A7-1.jpg?w=500&ssl=1")
-
+with left_co:
+    st.image("https://www.unescwa.org/sites/default/files/images/flags/Flag_of_Algeria.svg")
+st.image("title.PNG")
 
 # Create an empty container
 placeholder = st.empty()
 
-actual_email = "Algeria"
+actual_email = "algeria"
 actual_password = "algeria22"
 
 # Insert a form in the container
@@ -46,6 +48,7 @@ if submit and email == actual_email and password == actual_password:
     st.success("تم تسجيل الدخول بنجاح")
     leftt_co, centt_co,lastt_co = st.columns([1,1,2])
     with lastt_co :
+        st.title('الجزائر')
         st.image("SUB HEADER.PNG")
     col1, col2, col3, col4, col5, col6, col7 = st.columns(7)
     with col1:
